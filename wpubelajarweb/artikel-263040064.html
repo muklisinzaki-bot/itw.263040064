@@ -1,0 +1,205 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Halaman HTML Murni</title>
+  </head>
+  <body
+    bgcolor="#f0f4f8"
+    text="#333333"
+    link="#0066cc"
+    vlink="#800080"
+    alink="#ff0000"
+  >
+    <!-- Header / Bagian Atas -->
+    <table
+      width="100%"
+      bgcolor="#2c3e50"
+      cellpadding="15"
+      cellspacing="0"
+      border="0"
+    >
+      <tr>
+        <td align="center">
+          <font color="#ffffff" size="6"><b>WEB UTAMA</b></font
+          ><br />
+          <font color="#ecf0f1" size="3"
+            ><i>Contoh Halaman Menggunakan Murni Elemen HTML</i></font
+          >
+        </td>
+      </tr>
+    </table>
+
+    <br />
+
+    <!-- Navigasi Menu -->
+    <table
+      width="100%"
+      bgcolor="#34495e"
+      cellpadding="8"
+      cellspacing="0"
+      border="0"
+    >
+      <tr>
+        <td align="center">
+          <font color="#ffffff">
+            <a href="#profil"><font color="#ffffff">Profil</font></a> |
+            <a href="#artikel"><font color="#ffffff">Artikel</font></a> |
+            <a href="#tabel-data"><font color="#ffffff">Data</font></a> |
+            <a href="#formulir"><font color="#ffffff">Kontak</font></a>
+          </font>
+        </td>
+      </tr>
+    </table>
+
+    <br />
+    <hr size="2" color="#2c3e50" />
+    <br />
+
+    <!-- Konten Utama dalam Tabel Struktur -->
+    <table
+      width="90%"
+      align="center"
+      cellpadding="10"
+      cellspacing="0"
+      border="0"
+    >
+      <tr valign="top">
+        <!-- Kolom Utama (Kiri) -->
+        <td width="65%" bgcolor="#ffffff">
+          <!-- Section Profil -->
+          <a name="profil"></a>
+          <h2><font color="#2c3e50">Selamat Datang</font></h2>
+          <p>
+            Ini adalah contoh halaman web yang dibangun
+            <b>murni menggunakan elemen dan atribut HTML saja</b>. Seluruh tata
+            letak disusun menggunakan struktur tabel, sedangkan pewarnaan
+            memanfaatkan atribut bawaan HTML.
+          </p>
+
+          <br />
+
+          <!-- Section Artikel -->
+          <a name="artikel"></a>
+          <h3><font color="#2c3e50">Daftar Fitur HTML</font></h3>
+          <p>Beberapa elemen dasar yang sering digunakan dalam HTML:</p>
+          <ul>
+            <li>
+              <b>Teks Terstruktur:</b> Heading (h1-h6), paragraf, dan format
+              teks (bold, italic).
+            </li>
+            <li><b>Media:</b> Gambar, audio, dan video.</li>
+            <li><b>Tautan:</b> Link internal maupun eksternal.</li>
+            <li>
+              <b>Pengumpul Data:</b> Form, input, radio, checkbox, dan tombol.
+            </li>
+          </ul>
+
+          <br />
+          <hr />
+          <br />
+
+          <!-- Section Tabel Data -->
+          <a name="tabel-data"></a>
+          <h3><font color="#2c3e50">Contoh Tabel Data</font></h3>
+          <table
+            border="1"
+            width="100%"
+            cellpadding="8"
+            cellspacing="0"
+            bordercolor="#bdc3c7"
+          >
+            <tr bgcolor="#3498db">
+              <th><font color="#ffffff">No</font></th>
+              <th><font color="#ffffff">Komponen</font></th>
+              <th><font color="#ffffff">Fungsi</font></th>
+            </tr>
+            <tr bgcolor="#f9f9f9" align="center">
+              <td>1</td>
+              <td align="left">Tag <code>&lt;table&gt;</code></td>
+              <td align="left">Membuat struktur baris dan kolom</td>
+            </tr>
+            <tr align="center">
+              <td>2</td>
+              <td align="left">Tag <code>&lt;form&gt;</code></td>
+              <td align="left">Menerima input dari pengguna</td>
+            </tr>
+            <tr bgcolor="#f9f9f9" align="center">
+              <td>3</td>
+              <td align="left">Tag <code>&lt;a&gt;</code></td>
+              <td align="left">Membuat navigasi / link</td>
+            </tr>
+          </table>
+        </td>
+
+        <!-- Pembatas Antar Kolom -->
+        <td width="5%"></td>
+
+        <!-- Sidebar (Kanan) -->
+        <td width="30%" bgcolor="#ffffff">
+          <!-- Section Form / Kontak -->
+          <a name="formulir"></a>
+          <h3><font color="#2c3e50">Formulir Kontak</font></h3>
+          <form action="#" method="POST">
+            <p>
+              <label>Nama Lengkap:</label><br />
+              <input
+                type="text"
+                name="nama"
+                size="25"
+                placeholder="Isi nama Anda"
+              />
+            </p>
+            <p>
+              <label>Email:</label><br />
+              <input
+                type="email"
+                name="email"
+                size="25"
+                placeholder="nama@email.com"
+              />
+            </p>
+            <p>
+              <label>Jenis Kelamin:</label><br />
+              <input type="radio" name="jk" value="L" /> Laki-laki <br />
+              <input type="radio" name="jk" value="P" /> Perempuan
+            </p>
+            <p>
+              <label>Pesan:</label><br />
+              <textarea
+                name="pesan"
+                rows="5"
+                cols="22"
+                placeholder="Tulis pesan..."
+              ></textarea>
+            </p>
+            <p>
+              <input type="submit" value="Kirim Data" />
+              <input type="reset" value="Reset" />
+            </p>
+          </form>
+        </td>
+      </tr>
+    </table>
+
+    <br /><br />
+    <hr size="2" color="#2c3e50" />
+
+    <!-- Footer / Bagian Bawah -->
+    <table
+      width="100%"
+      bgcolor="#2c3e50"
+      cellpadding="10"
+      cellspacing="0"
+      border="0"
+    >
+      <tr>
+        <td align="center">
+          <font color="#ffffff" size="2">
+            &copy; 2026 Dibuat Murni Menggunakan HTML.
+          </font>
+        </td>
+      </tr>
+    </table>
+  </body>
+</html>
